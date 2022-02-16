@@ -1,9 +1,9 @@
-require("bootstrap");
-const img1 = require('../../assets/img/food-table.jpg');
-const img2 = require('../../assets/img/grill.jpg');
+require('bootstrap');
+const img1 = require("../../assets/img/food-table.jpg");
+const img2 = require("../../assets/img/grill.jpg");
 
 $(document).ready(function() {
-
+  // First image is hard coded in index.html
   const carouselSlides = [
     {
       title: "We travel all over the US",
@@ -19,8 +19,8 @@ $(document).ready(function() {
       btnText: "Purchase Tickets",
       btnUrl: "tickets.html"
     },
-  ]
-
+  ];
+  
   carouselSlides.forEach((slide, i) => {
     $('.carousel-inner').append(`
   <div class="carousel-item fullscreen-carousel" style="background-image: url('${slide.img}')">
